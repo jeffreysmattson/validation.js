@@ -88,7 +88,7 @@ var form_validate = {
 
 
         /* let's check for valid phone numbers ... */
-        $(container + ' .phone').each(function(index){
+        $(container + ' .phone,' + container + ' input[type="tel"]').each(function(index){
             $el = $(this);
             val = $el.val().trim();
             $el.val(val);
